@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/767fb43fc0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="teststyle.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section id="hero-section">
+    <header>
+      <div class="burger-icon" onclick="toggleMenu()">
+        <div class="burger-line line-top"></div>
+        <div class="burger-line line-middle"></div>
+        <div class="burger-line line-bottom"></div>
+      </div>
+      <div class="logo"><a href="#">Urban <span>Furniture</span></a></div>
+      <div class="profile-cart">
+        <span><a href="#"><i class="fa-regular fa-user"></i></a></span>
+        <span><a href="#"><i class="fa-regular fa-heart"></i></a></span>
+        <span><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+    </header>
+    <nav>
+      <div class="dropdown">
+        <div class="dropdown-header">
+          <a href="#">Living Room Furniture</a>
+          <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Sofas & Couches</a>
+          <a href="#">Coffee Tables</a>
+          <a href="#">TV Stands & Media Consoles</a>
+          <a href="#">Lounge Chairs</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header">
+        <a href="#">Bedroom Furniture</a>
+        <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Beds</a>
+          <a href="#">Dressers & Chests</a>
+          <a href="#">Nightstands</a>
+          <a href="#">Wardrobes</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header">
+        <a href="#">Dining Room Furniture</a>
+        <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Dining Tables</a>
+          <a href="#">Dining Chairs</a>
+          <a href="#">Buffets & Sideboards</a>
+          <a href="#">Bar Stools</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header">
+        <a href="#">Office Furniture</a>
+        <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Desks</a>
+          <a href="#">Office Chairs</a>
+          <a href="#">Bookcases & Shelving</a>
+          <a href="#">File Cabinets</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header">
+        <a href="#">Outdoor Furniture</a>
+        <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Patio Sets</a>
+          <a href="#">Outdoor Sofas</a>
+          <a href="#">Dining Sets</a>
+          <a href="#">Hammocks & Swings</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header">
+        <a href="#">Kids' Furniture</a>
+        <a href="#"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+        <!-- Dropdown content -->
+        <div class="dropdown-content">
+          <a href="#">Kids' Beds</a>
+          <a href="#">Bunk Beds</a>
+          <a href="#">Kids' Desks & Chairs</a>
+          <a href="#">Toy Storage</a>
+        </div>
+      </div>
+    </nav>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+  <div class="product-details">
+    <div class="product-image" id="productImage"></div>
+    <div class="product-info">
+      <h2 id="productName"></h2>
+      <div class="price-container">
+        <p class="price" id="productPrice"></p>
+        <p class="discounted-price" id="productDiscountedPrice"></p>
+      </div>
+      <p class="product-description" id="productDescription"></p> <!-- Add this element -->
+      <div class="color-options" id="colorOptions"></div>
+      <button id="addToCartButton">Add to Cart</button>
+    </div>
+    <!-- Load the main script that defines the 'products' array -->
+    <script src="script.js"></script>
+
+    <!-- Load the product template script -->
+    <script src="product_template.js"></script>
+</body>
+
+</html>
